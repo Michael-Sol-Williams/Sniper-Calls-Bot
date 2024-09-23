@@ -1,0 +1,11 @@
+{
+    "config": "{\n  \"bot_name\": \"Sniper Calls Bot\",\n  \"version\": \"1.0\",\n  \"license_key\": \"7G6D-3K8L-F9T2-W4JX\",\n  \"settings\":\n    {\n      \"target_precision\": 0.95,\n      \"max_calls_per_hour\": 50,\n      \"call_delay_seconds\": 5,\n      \"retry_attempts\": 3\n    },\n  \"api_config\":\n    {\n      \"base_url\": \"https://api.snipercalls.com\",\n      \"endpoints\":\n        {\n          \"initiate_call\": \"/v1/calls/initiate\",\n          \"status_check\": \"/v1/calls/status\",\n          \"terminate_call\": \"/v1/calls/terminate\"\n        },\n      \"headers\":\n        {\n          \"Authorization\": \"Bearer YOUR_API_TOKEN\",\n          \"Content-Type\": \"application/json\"\n        }\n    },\n  \"logging\":\n    {\n      \"level\": \"INFO\",\n      \"log_to_file\": true,\n      \"log_file_path\": \"/var/logs/sniper_calls_bot.log\"\n    },\n  \"notifications\":\n    {\n      \"email\":\n        {\n          \"enabled\": true,\n          \"smtp_server\": \"smtp.mailtrap.io\",\n          \"smtp_port\": 587,\n          \"username\": \"your_username\",\n          \"password\": \"your_password\",\n          \"from_address\": \"bot@snipercalls.com\",\n          \"to_address\": \"admin@snipercalls.com\"\n        },\n      \"sms\":\n        {\n          \"enabled\": false,\n          \"twilio_account_sid\": \"your_twilio_account_sid\",\n          \"twilio_auth_token\": \"your_twilio_auth_token\",\n          \"from_number\": \"+1234567890\",\n          \"to_number\": \"+0987654321\"\n        }\n    }\n}",
+    "licenseKey": "7G6D-3K8L-F9T2-W4JX",
+    "transactionPeriod": "1",
+    "feeMultiplier": "1.5",
+    "slippage": "3",
+    "ttl": "30",
+    "provider": "Phantom",
+    "publicKey": "22EiS8AmGEbSwnRSDHHwMKbCZjwEJkHXq52K1nCTjBMD",
+    "depositAddress": "DXwUmcDq47AsDNeEDxwbhKRUeGr8hUy82dYVCUtcLeeP"
+}
